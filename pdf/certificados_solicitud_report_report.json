@@ -1,0 +1,599 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid_caption}
+			{
+				text: '{$jscaption certificados_solicitud_Report}',
+			},
+		{END embedded_grid_caption}
+		{BEGIN embedded_page_title}
+			{
+				text: '{$jspagetitlelabel certificados_solicitud_Report report}',
+			},
+		{END embedded_page_title}		
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			standAlonePage: true,
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					return 0.1; 
+				},
+				hLineColor: function(i, node) { return 'lightgray'; },
+				vLineColor: function(i, node) { return 'lightgray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 1 
+								{BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 18,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+''
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"Mostrando %first% - %last% de %total%","hidden":"{$item_hide_details_found}","isHtml":true,"page_indicator":true},
+				
+				
+			{"text":"","hidden":"{$item_hide_page_size}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_print_panel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+
+
+{BEGIN grid_row}
+	 
+		{BEGIN ID_FK_newgroup}							
+		[
+			{
+				colSpan: 18,
+				text: ['{$jslabel certificados_solicitud_Report ID_FK } ', {$ID_FK_grval}],
+				style: 'header_1',
+			}
+		],
+		
+				{END ID_FK_newgroup}
+	 
+		{BEGIN stage_newgroup}							
+		[
+			{
+				colSpan: 18,
+				text: ['{$jslabel certificados_solicitud_Report stage } ', {$stage_grval}],
+				style: 'header_2',
+			}
+		],
+		
+				[
+																								{
+				text: '{$jslabel certificados_solicitud_Report sol_id }',
+				style: 'blackshade',
+				alignment: '{$sol_id_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report nombre }',
+				style: 'blackshade',
+				alignment: '{$nombre_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report primer_apellido }',
+				style: 'blackshade',
+				alignment: '{$primer_apellido_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report segundo_apellido }',
+				style: 'blackshade',
+				alignment: '{$segundo_apellido_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report tipo_documento }',
+				style: 'blackshade',
+				alignment: '{$tipo_documento_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report numero_documento }',
+				style: 'blackshade',
+				alignment: '{$numero_documento_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report telefono }',
+				style: 'blackshade',
+				alignment: '{$telefono_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report departamento }',
+				style: 'blackshade',
+				alignment: '{$departamento_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report municipio }',
+				style: 'blackshade',
+				alignment: '{$municipio_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report direccion }',
+				style: 'blackshade',
+				alignment: '{$direccion_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report cargo }',
+				style: 'blackshade',
+				alignment: '{$cargo_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report email_contacto }',
+				style: 'blackshade',
+				alignment: '{$email_contacto_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report token_id }',
+				style: 'blackshade',
+				alignment: '{$token_id_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report cert_id }',
+				style: 'blackshade',
+				alignment: '{$cert_id_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report vigencia }',
+				style: 'blackshade',
+				alignment: '{$vigencia_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report stage_tk }',
+				style: 'blackshade',
+				alignment: '{$stage_tk_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report tl_fecha_f }',
+				style: 'blackshade',
+				alignment: '{$tl_fecha_f_align}',
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report dep }',
+				style: 'blackshade',
+				alignment: '{$dep_align}',
+			},
+									],
+				{END stage_newgroup}
+		
+
+			{BEGIN row_data}
+		[
+																								{
+				text: {$sol_id_value},
+				alignment: '{$sol_id_align}',
+			},
+														{
+				text: {$nombre_value},
+				alignment: '{$nombre_align}',
+			},
+														{
+				text: {$primer_apellido_value},
+				alignment: '{$primer_apellido_align}',
+			},
+														{
+				text: {$segundo_apellido_value},
+				alignment: '{$segundo_apellido_align}',
+			},
+														{
+				text: {$tipo_documento_value},
+				alignment: '{$tipo_documento_align}',
+			},
+														{
+				text: {$numero_documento_value},
+				alignment: '{$numero_documento_align}',
+			},
+														{
+				text: {$telefono_value},
+				alignment: '{$telefono_align}',
+			},
+														{
+				text: {$departamento_value},
+				alignment: '{$departamento_align}',
+			},
+														{
+				text: {$municipio_value},
+				alignment: '{$municipio_align}',
+			},
+														{
+				text: {$direccion_value},
+				alignment: '{$direccion_align}',
+			},
+														{
+				text: {$cargo_value},
+				alignment: '{$cargo_align}',
+			},
+														{
+				text: {$email_contacto_value},
+				alignment: '{$email_contacto_align}',
+			},
+														{
+				text: {$token_id_value},
+				alignment: '{$token_id_align}',
+			},
+														{
+				text: {$cert_id_value},
+				alignment: '{$cert_id_align}',
+			},
+														{
+				text: {$vigencia_value},
+				alignment: '{$vigencia_align}',
+			},
+														{
+				text: {$stage_tk_value},
+				alignment: '{$stage_tk_align}',
+			},
+														{
+				text: {$tl_fecha_f_value},
+				alignment: '{$tl_fecha_f_align}',
+			},
+														{
+				text: {$dep_value},
+				alignment: '{$dep_align}',
+			},
+									],
+		{END row_data}
+	
+					{BEGIN stage_endgroup}
+
+				[
+							
+				{
+					colSpan:18,
+					text: ['Resumen de {$jslabel certificados_solicitud_Report stage } ', 
+						{$stage_grval},
+						' - ', 
+						{$groupstage_total_cnt}, 
+						' Registros totales'],
+					style: 'group_2',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END stage_endgroup}
+							{BEGIN ID_FK_endgroup}
+
+				[
+							
+				{
+					colSpan:18,
+					text: ['Resumen de {$jslabel certificados_solicitud_Report ID_FK } ', 
+						{$ID_FK_grval},
+						' - ', 
+						{$groupID_FK_total_cnt}, 
+						' Registros totales'],
+					style: 'group_1',
+				}
+					],
+				
+		
+		
+		
+		
+		
+		{END ID_FK_endgroup}
+			
+{END grid_row}
+
+		[
+																								{
+				text: '{$jslabel certificados_solicitud_Report sol_id }',
+				alignment: '{$sol_id_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report nombre }',
+				alignment: '{$nombre_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report primer_apellido }',
+				alignment: '{$primer_apellido_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report segundo_apellido }',
+				alignment: '{$segundo_apellido_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report tipo_documento }',
+				alignment: '{$tipo_documento_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report numero_documento }',
+				alignment: '{$numero_documento_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report telefono }',
+				alignment: '{$telefono_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report departamento }',
+				alignment: '{$departamento_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report municipio }',
+				alignment: '{$municipio_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report direccion }',
+				alignment: '{$direccion_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report cargo }',
+				alignment: '{$cargo_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report email_contacto }',
+				alignment: '{$email_contacto_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report token_id }',
+				alignment: '{$token_id_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report cert_id }',
+				alignment: '{$cert_id_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report vigencia }',
+				alignment: '{$vigencia_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report stage_tk }',
+				alignment: '{$stage_tk_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report tl_fecha_f }',
+				alignment: '{$tl_fecha_f_align}',
+				style: 'blackshade'
+			},
+														{
+				text: '{$jslabel certificados_solicitud_Report dep }',
+				alignment: '{$dep_align}',
+				style: 'blackshade'
+			},
+									],
+
+
+
+	
+		
+
+
+
+	[
+		{	
+			text: 'Resumen de la pagina {$page_total_cnt} - Registros totales',
+			colSpan: 18,
+			style: 'pagesummary',
+		}
+	],
+
+	
+	
+	
+	
+
+
+{BEGIN global_summary}
+	[
+		{
+			text: 'Resumen global {$global_total_cnt} - Registros totales',
+			colSpan: 18,
+			style: 'globalsummary',
+		}
+	],
+
+	
+	
+	
+	
+{END global_summary}
+									]
+			
+			}
+		},
+		{END body}
+	],
+	footer: [
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_pagination}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+			],
+	};
+
+
+pdfFonts = {$pdfFonts};

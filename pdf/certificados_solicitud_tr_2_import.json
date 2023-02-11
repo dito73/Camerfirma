@@ -1,0 +1,204 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel certificados_solicitud_tr_2 import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":{$sol_id_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$ID_FK_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$nombre_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$primer_apellido_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$segundo_apellido_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$tipo_documento_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$numero_documento_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$telefono_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$departamento_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$municipio_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$direccion_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$cargo_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$email_contacto_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$email_contacto_c_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$token_id_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$cert_id_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+				
+			{"text":{$vigencia_pdfvalue},"hidden":"{$item_hide_import_field17}"},
+				
+				
+			{"text":{$stage_pdfvalue},"hidden":"{$item_hide_import_field18}"},
+				
+				
+			{"text":{$sol_ticket_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$doc_acta_pdfvalue},"hidden":"{$item_hide_import_field19}"},
+				
+				
+			{"text":{$doc_carta_pdfvalue},"hidden":"{$item_hide_import_field20}"},
+				
+				
+			{"text":{$doc_certificado_pdfvalue},"hidden":"{$item_hide_import_field21}"},
+				
+				
+			{"text":{$doc_poder_pdfvalue},"hidden":"{$item_hide_import_field22}"},
+				
+				
+			{"text":{$doc_rut_pdfvalue},"hidden":"{$item_hide_import_field23}"},
+				
+				
+			{"text":{$doc_cedula_pdfvalue},"hidden":"{$item_hide_import_field24}"},
+				
+				
+			{"text":{$doc_escritura_pdfvalue},"hidden":"{$item_hide_import_field25}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+};
+
+pdfFonts = {$pdfFonts};
+  

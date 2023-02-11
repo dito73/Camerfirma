@@ -1,0 +1,1440 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-report"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_ID_FK}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ID_FK}" {$filterRow_attrs_ID_FK}>
+			<label>{$label certificados_solicitud_Report ID_FK }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ID_FK}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ID_FK}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ID_FK}</span>
+						</div>
+		{END searchCtrlBlock_ID_FK}
+																{BEGIN searchCtrlBlock_dep}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dep}" {$filterRow_attrs_dep}>
+			<label>{$label certificados_solicitud_Report dep }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dep}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dep}</span>
+						</div>
+		{END searchCtrlBlock_dep}
+																{BEGIN searchCtrlBlock_tl_fecha_f}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tl_fecha_f}" {$filterRow_attrs_tl_fecha_f}>
+			<label>{$label certificados_solicitud_Report tl_fecha_f }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tl_fecha_f}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tl_fecha_f}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tl_fecha_f}</span>
+						</div>
+		{END searchCtrlBlock_tl_fecha_f}
+																{BEGIN searchCtrlBlock_vigencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vigencia}" {$filterRow_attrs_vigencia}>
+			<label>{$label certificados_solicitud_Report vigencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vigencia}</span>
+						</div>
+		{END searchCtrlBlock_vigencia}
+																{BEGIN searchCtrlBlock_token_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_token_id}" {$filterRow_attrs_token_id}>
+			<label>{$label certificados_solicitud_Report token_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_token_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_token_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_token_id}</span>
+						</div>
+		{END searchCtrlBlock_token_id}
+																{BEGIN searchCtrlBlock_tipo_documento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tipo_documento}" {$filterRow_attrs_tipo_documento}>
+			<label>{$label certificados_solicitud_Report tipo_documento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tipo_documento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tipo_documento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tipo_documento}</span>
+						</div>
+		{END searchCtrlBlock_tipo_documento}
+																{BEGIN searchCtrlBlock_telefono}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_telefono}" {$filterRow_attrs_telefono}>
+			<label>{$label certificados_solicitud_Report telefono }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_telefono}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_telefono}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_telefono}</span>
+						</div>
+		{END searchCtrlBlock_telefono}
+																{BEGIN searchCtrlBlock_stage_tk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_stage_tk}" {$filterRow_attrs_stage_tk}>
+			<label>{$label certificados_solicitud_Report stage_tk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_stage_tk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_stage_tk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_stage_tk}</span>
+						</div>
+		{END searchCtrlBlock_stage_tk}
+																{BEGIN searchCtrlBlock_stage}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_stage}" {$filterRow_attrs_stage}>
+			<label>{$label certificados_solicitud_Report stage }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_stage}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_stage}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_stage}</span>
+						</div>
+		{END searchCtrlBlock_stage}
+																{BEGIN searchCtrlBlock_sol_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sol_id}" {$filterRow_attrs_sol_id}>
+			<label>{$label certificados_solicitud_Report sol_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sol_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sol_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sol_id}</span>
+						</div>
+		{END searchCtrlBlock_sol_id}
+																{BEGIN searchCtrlBlock_segundo_apellido}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_segundo_apellido}" {$filterRow_attrs_segundo_apellido}>
+			<label>{$label certificados_solicitud_Report segundo_apellido }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_segundo_apellido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_segundo_apellido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_segundo_apellido}</span>
+						</div>
+		{END searchCtrlBlock_segundo_apellido}
+																{BEGIN searchCtrlBlock_primer_apellido}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_primer_apellido}" {$filterRow_attrs_primer_apellido}>
+			<label>{$label certificados_solicitud_Report primer_apellido }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_primer_apellido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_primer_apellido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_primer_apellido}</span>
+						</div>
+		{END searchCtrlBlock_primer_apellido}
+																{BEGIN searchCtrlBlock_numero_documento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_numero_documento}" {$filterRow_attrs_numero_documento}>
+			<label>{$label certificados_solicitud_Report numero_documento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_numero_documento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_numero_documento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_numero_documento}</span>
+						</div>
+		{END searchCtrlBlock_numero_documento}
+																{BEGIN searchCtrlBlock_nombre}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nombre}" {$filterRow_attrs_nombre}>
+			<label>{$label certificados_solicitud_Report nombre }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nombre}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nombre}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nombre}</span>
+						</div>
+		{END searchCtrlBlock_nombre}
+																{BEGIN searchCtrlBlock_municipio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_municipio}" {$filterRow_attrs_municipio}>
+			<label>{$label certificados_solicitud_Report municipio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_municipio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_municipio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_municipio}</span>
+						</div>
+		{END searchCtrlBlock_municipio}
+																{BEGIN searchCtrlBlock_email_contacto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_email_contacto}" {$filterRow_attrs_email_contacto}>
+			<label>{$label certificados_solicitud_Report email_contacto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_email_contacto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_email_contacto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_email_contacto}</span>
+						</div>
+		{END searchCtrlBlock_email_contacto}
+																{BEGIN searchCtrlBlock_direccion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_direccion}" {$filterRow_attrs_direccion}>
+			<label>{$label certificados_solicitud_Report direccion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_direccion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_direccion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_direccion}</span>
+						</div>
+		{END searchCtrlBlock_direccion}
+																{BEGIN searchCtrlBlock_departamento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_departamento}" {$filterRow_attrs_departamento}>
+			<label>{$label certificados_solicitud_Report departamento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_departamento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_departamento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_departamento}</span>
+						</div>
+		{END searchCtrlBlock_departamento}
+																{BEGIN searchCtrlBlock_cert_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cert_id}" {$filterRow_attrs_cert_id}>
+			<label>{$label certificados_solicitud_Report cert_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cert_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cert_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cert_id}</span>
+						</div>
+		{END searchCtrlBlock_cert_id}
+																{BEGIN searchCtrlBlock_cargo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cargo}" {$filterRow_attrs_cargo}>
+			<label>{$label certificados_solicitud_Report cargo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cargo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cargo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cargo}</span>
+						</div>
+		{END searchCtrlBlock_cargo}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="filter_panel" {$item_filter_panel} data-topcell-item-type="filter_panel" >
+				<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}" 
+			>
+	<!-- Begin Filter panel content -->
+
+
+
+
+
+
+{BEGIN filter_control_departamento}
+
+	<div class="panel panel-info filter-field filter-departamento-container">
+		<div class="panel-heading filter-expander">
+													<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>
+
+					<input class="filter-selectAll-departamento" type="checkbox" name="selectAll" {$selectAll_attrs_departamento} />
+		
+			{BEGIN clearLink_departamento}
+			<a href="#" class="filter-clear filter-clear-departamento" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_departamento}
+			{$label certificados_solicitud_Report departamento }		</div>
+		<ul class="list-group">
+					{BEGIN filterCtrlBlock_departamento}
+		<li class="list-group-item filter-values filter-values-departamento {$collapsedClass_departamento} {$visibilityClass_departamento}">
+			{$departamento_filter}
+						
+					
+					
+					
+					
+					
+			{BEGIN filterCtrlBlock_municipio}
+				<div class="filter-values filter-values-municipio rnr-bg {$collapsedClass_departamento} {$visibilityClass_municipio}">
+					{$municipio_filter}
+								
+					
+					
+					
+					
+							</div>
+			{END filterCtrlBlock_municipio}
+
+			
+							{BEGIN filter_button_showmore_municipio}
+				<div class="rnr-bg filter-show-more {$visibilityClass_municipio}">
+					<a href="#" class="filter-show-more-link filterShowMore_municipio">{$show_n_more_municipio}</a>
+				</div>
+				{END filter_button_showmore_municipio}
+								</li>
+		{END filterCtrlBlock_departamento}
+
+			{BEGIN filter_button_showmore_departamento}
+		<li class="list-group-item filter-show-more {$collapsedClass_departamento} {$showMoreBtnClass_departamento}">
+			<a class="filter-show-more-link filterShowMore_departamento" href="#">{$show_n_more_departamento}</a>
+		</li>
+		{END filter_button_showmore_departamento}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_departamento}
+		<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_departamento}">
+			<a href="#" class="filter-departamento-btn-multiselect filter-apply-departamento" {$filterbutton_attrs_departamento}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_departamento}
+			</ul>
+	</div>
+
+{END filter_control_departamento}
+
+
+
+
+
+
+{BEGIN filter_control_tl_fecha_f}
+
+	<div class="panel panel-info filter-field filter-tl_fecha_f-container">
+		<div class="panel-heading filter-expander">
+													<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>
+
+					<input class="filter-selectAll-tl_fecha_f" type="checkbox" name="selectAll" {$selectAll_attrs_tl_fecha_f} />
+		
+			{BEGIN clearLink_tl_fecha_f}
+			<a href="#" class="filter-clear filter-clear-tl_fecha_f" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_tl_fecha_f}
+			{$label certificados_solicitud_Report tl_fecha_f }		</div>
+		<ul class="list-group">
+					{BEGIN filterCtrlBlock_tl_fecha_f}
+		<li class="list-group-item filter-values filter-values-tl_fecha_f {$collapsedClass_tl_fecha_f} {$visibilityClass_tl_fecha_f}">
+			{$tl_fecha_f_filter}
+						
+					
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_tl_fecha_f}
+
+			{BEGIN filter_button_showmore_tl_fecha_f}
+		<li class="list-group-item filter-show-more {$collapsedClass_tl_fecha_f} {$showMoreBtnClass_tl_fecha_f}">
+			<a class="filter-show-more-link filterShowMore_tl_fecha_f" href="#">{$show_n_more_tl_fecha_f}</a>
+		</li>
+		{END filter_button_showmore_tl_fecha_f}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_tl_fecha_f}
+		<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_tl_fecha_f}">
+			<a href="#" class="filter-tl_fecha_f-btn-multiselect filter-apply-tl_fecha_f" {$filterbutton_attrs_tl_fecha_f}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_tl_fecha_f}
+			</ul>
+	</div>
+
+{END filter_control_tl_fecha_f}
+
+
+
+
+
+
+{BEGIN filter_control_token_id}
+
+	<div class="panel panel-info filter-field filter-token_id-container">
+		<div class="panel-heading filter-expander">
+													<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>
+
+					<input class="filter-selectAll-token_id" type="checkbox" name="selectAll" {$selectAll_attrs_token_id} />
+		
+			{BEGIN clearLink_token_id}
+			<a href="#" class="filter-clear filter-clear-token_id" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_token_id}
+			{$label certificados_solicitud_Report token_id }		</div>
+		<ul class="list-group">
+					{BEGIN filterCtrlBlock_token_id}
+		<li class="list-group-item filter-values filter-values-token_id {$collapsedClass_token_id} {$visibilityClass_token_id}">
+			{$token_id_filter}
+						
+					
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_token_id}
+
+			{BEGIN filter_button_showmore_token_id}
+		<li class="list-group-item filter-show-more {$collapsedClass_token_id} {$showMoreBtnClass_token_id}">
+			<a class="filter-show-more-link filterShowMore_token_id" href="#">{$show_n_more_token_id}</a>
+		</li>
+		{END filter_button_showmore_token_id}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_token_id}
+		<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_token_id}">
+			<a href="#" class="filter-token_id-btn-multiselect filter-apply-token_id" {$filterbutton_attrs_token_id}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_token_id}
+			</ul>
+	</div>
+
+{END filter_control_token_id}
+
+
+
+
+
+
+{BEGIN filter_control_cert_id}
+
+	<div class="panel panel-info filter-field filter-cert_id-container">
+		<div class="panel-heading filter-expander">
+													<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>
+
+					<input class="filter-selectAll-cert_id" type="checkbox" name="selectAll" {$selectAll_attrs_cert_id} />
+		
+			{BEGIN clearLink_cert_id}
+			<a href="#" class="filter-clear filter-clear-cert_id" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_cert_id}
+			{$label certificados_solicitud_Report cert_id }		</div>
+		<ul class="list-group">
+					{BEGIN filterCtrlBlock_cert_id}
+		<li class="list-group-item filter-values filter-values-cert_id {$collapsedClass_cert_id} {$visibilityClass_cert_id}">
+			{$cert_id_filter}
+						
+					
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_cert_id}
+
+			{BEGIN filter_button_showmore_cert_id}
+		<li class="list-group-item filter-show-more {$collapsedClass_cert_id} {$showMoreBtnClass_cert_id}">
+			<a class="filter-show-more-link filterShowMore_cert_id" href="#">{$show_n_more_cert_id}</a>
+		</li>
+		{END filter_button_showmore_cert_id}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_cert_id}
+		<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_cert_id}">
+			<a href="#" class="filter-cert_id-btn-multiselect filter-apply-cert_id" {$filterbutton_attrs_cert_id}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_cert_id}
+			</ul>
+	</div>
+
+{END filter_control_cert_id}
+
+
+
+	<!-- End Filter panel content -->
+	</div>
+</div>			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="certificados_solicitud_report_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export_report_excel" data-itemid="export_report_excel" {$item_export_report_excel} data-pageid="{$pageid}" data-small >
+				<a  href="certificados_solicitud_report_print.php?all=1&amp;format=excel{$stateLink}" {$excellink_attrs}  title="" >
+				
+		Exportar a Excel		
+		</a>
+	</li>
+{END export_link}
+							{BEGIN export_link}
+	<li data-itemtype="export_report_word" data-itemid="export_report_word" {$item_export_report_word} data-pageid="{$pageid}" data-small >
+				<a  href="certificados_solicitud_report_print.php?all=1&amp;format=word{$stateLink}" {$wordlink_attrs}  title="" >
+				
+		Exportar a Word 		
+		</a>
+	</li>
+{END export_link}
+							{BEGIN export_link}
+	<li data-itemtype="export_report_pdf" data-itemid="export_report_pdf" {$item_export_report_pdf} data-pageid="{$pageid}" data-small >
+				<a  data-pdfpage="rprint" 
+data-scope="0" 
+data-split="0" 
+data-records="10" 
+data-orientation="portrait" 
+data-scale="100" 
+data-filename="Certificados Solicitud Report.pdf" 
+data-pagesize="LETTER" 
+data-pagetype="rprint" 
+  title="" >
+				
+		Exportar a PDF		
+		</a>
+	</li>
+{END export_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$grpsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="certificados_solicitud_report_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimir informe completo							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="certificados_solicitud_report_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+		
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Grupos por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+			td.group_1{
+			background-color: #90EE90;
+		}
+		td.nbgroup_1{
+			background-color: #90EE90;
+		}
+		td.header_1 {
+			background-color: #90EE90; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_2{
+			background-color: #ADD8E6;
+		}
+		td.nbgroup_2{
+			background-color: #ADD8E6;
+		}
+		td.header_2 {
+			background-color: #ADD8E6; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+
+<div class="rnr-cw-grid rnr-s-2 asbuttons {$pageStyleName}" data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" >
+					
+
+
+<table class="table table-hover table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+							{BEGIN ID_FK_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="18">
+				{$label certificados_solicitud_Report ID_FK }:&nbsp;
+				{$xID_FK_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field" {$item_report_group_field} data-pageid="{$pageid}" data-field="ID_FK" data-fieldname="ID_FK" >
+{$ID_FK_grval}
+</span>			</td>
+		</tr>
+		
+				{END ID_FK_newgroup}
+							{BEGIN stage_newgroup}							
+		<tr class="group-spliter-2"  >
+			<td class="header_2" colspan="18">
+				{$label certificados_solicitud_Report stage }:&nbsp;
+				{$xstage_grval}
+				<span data-itemtype="report_group_field" data-itemid="report_group_field1" {$item_report_group_field1} data-pageid="{$pageid}" data-field="stage" data-fieldname="stage" >
+{$stage_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																								<td class="blackshade {$fieldclass_sol_id}">{$label certificados_solicitud_Report sol_id }</td>
+														<td class="blackshade {$fieldclass_nombre}">{$label certificados_solicitud_Report nombre }</td>
+														<td class="blackshade {$fieldclass_primer_apellido}">{$label certificados_solicitud_Report primer_apellido }</td>
+														<td class="blackshade {$fieldclass_segundo_apellido}">{$label certificados_solicitud_Report segundo_apellido }</td>
+														<td class="blackshade {$fieldclass_tipo_documento}">{$label certificados_solicitud_Report tipo_documento }</td>
+														<td class="blackshade {$fieldclass_numero_documento}">{$label certificados_solicitud_Report numero_documento }</td>
+														<td class="blackshade {$fieldclass_telefono}">{$label certificados_solicitud_Report telefono }</td>
+														<td class="blackshade {$fieldclass_departamento}">{$label certificados_solicitud_Report departamento }</td>
+														<td class="blackshade {$fieldclass_municipio}">{$label certificados_solicitud_Report municipio }</td>
+														<td class="blackshade {$fieldclass_direccion}">{$label certificados_solicitud_Report direccion }</td>
+														<td class="blackshade {$fieldclass_cargo}">{$label certificados_solicitud_Report cargo }</td>
+														<td class="blackshade {$fieldclass_email_contacto}">{$label certificados_solicitud_Report email_contacto }</td>
+														<td class="blackshade {$fieldclass_token_id}">{$label certificados_solicitud_Report token_id }</td>
+														<td class="blackshade {$fieldclass_cert_id}">{$label certificados_solicitud_Report cert_id }</td>
+														<td class="blackshade {$fieldclass_vigencia}">{$label certificados_solicitud_Report vigencia }</td>
+														<td class="blackshade {$fieldclass_stage_tk}">{$label certificados_solicitud_Report stage_tk }</td>
+														<td class="blackshade {$fieldclass_tl_fecha_f}">{$label certificados_solicitud_Report tl_fecha_f }</td>
+														<td class="blackshade {$fieldclass_dep}">{$label certificados_solicitud_Report dep }</td>
+									</tr>
+				{END stage_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																																				<td class="data {$fieldclass_sol_id}">
+			{$xsol_id_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field" {$item_report_grid_field} data-pageid="{$pageid}" data-field="sol_id" data-fieldname="sol_id" >
+{$sol_id_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_nombre}">
+			{$xnombre_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field3" {$item_report_grid_field3} data-pageid="{$pageid}" data-field="nombre" data-fieldname="nombre" >
+{$nombre_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_primer_apellido}">
+			{$xprimer_apellido_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field4" {$item_report_grid_field4} data-pageid="{$pageid}" data-field="primer_apellido" data-fieldname="primer_apellido" >
+{$primer_apellido_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_segundo_apellido}">
+			{$xsegundo_apellido_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field5" {$item_report_grid_field5} data-pageid="{$pageid}" data-field="segundo_apellido" data-fieldname="segundo_apellido" >
+{$segundo_apellido_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_tipo_documento}">
+			{$xtipo_documento_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field6" {$item_report_grid_field6} data-pageid="{$pageid}" data-field="tipo_documento" data-fieldname="tipo_documento" >
+{$tipo_documento_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_numero_documento}">
+			{$xnumero_documento_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field7" {$item_report_grid_field7} data-pageid="{$pageid}" data-field="numero_documento" data-fieldname="numero_documento" >
+{$numero_documento_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_telefono}">
+			{$xtelefono_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field8" {$item_report_grid_field8} data-pageid="{$pageid}" data-field="telefono" data-fieldname="telefono" >
+{$telefono_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_departamento}">
+			{$xdepartamento_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field9" {$item_report_grid_field9} data-pageid="{$pageid}" data-field="departamento" data-fieldname="departamento" >
+{$departamento_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_municipio}">
+			{$xmunicipio_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field10" {$item_report_grid_field10} data-pageid="{$pageid}" data-field="municipio" data-fieldname="municipio" >
+{$municipio_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_direccion}">
+			{$xdireccion_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field11" {$item_report_grid_field11} data-pageid="{$pageid}" data-field="direccion" data-fieldname="direccion" >
+{$direccion_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_cargo}">
+			{$xcargo_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field12" {$item_report_grid_field12} data-pageid="{$pageid}" data-field="cargo" data-fieldname="cargo" >
+{$cargo_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_email_contacto}">
+			{$xemail_contacto_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field13" {$item_report_grid_field13} data-pageid="{$pageid}" data-field="email_contacto" data-fieldname="email_contacto" >
+{$email_contacto_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_token_id}">
+			{$xtoken_id_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field15" {$item_report_grid_field15} data-pageid="{$pageid}" data-field="token_id" data-fieldname="token_id" >
+{$token_id_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_cert_id}">
+			{$xcert_id_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field16" {$item_report_grid_field16} data-pageid="{$pageid}" data-field="cert_id" data-fieldname="cert_id" >
+{$cert_id_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_vigencia}">
+			{$xvigencia_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field17" {$item_report_grid_field17} data-pageid="{$pageid}" data-field="vigencia" data-fieldname="vigencia" >
+{$vigencia_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_stage_tk}">
+			{$xstage_tk_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field19" {$item_report_grid_field19} data-pageid="{$pageid}" data-field="stage_tk" data-fieldname="stage_tk" >
+{$stage_tk_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_tl_fecha_f}">
+			{$xtl_fecha_f_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field1" {$item_report_grid_field1} data-pageid="{$pageid}" data-field="tl_fecha_f" data-fieldname="tl_fecha_f" >
+{$tl_fecha_f_value}
+</span>
+
+			</td>
+																		<td class="data {$fieldclass_dep}">
+			{$xdep_value}
+			<span data-itemtype="report_grid_field" data-itemid="report_grid_field2" {$item_report_grid_field2} data-pageid="{$pageid}" data-field="dep" data-fieldname="dep" >
+{$dep_value}
+</span>
+
+			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN stage_endgroup}
+
+		<tr >
+					<td class="group_2" colspan="18">
+				Resumen de {$label certificados_solicitud_Report stage } {$stage_grval} - <span class="summary-2" data-type="summary">
+					{$groupstage_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END stage_endgroup}
+							{BEGIN ID_FK_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="18">
+				Resumen de {$label certificados_solicitud_Report ID_FK } {$ID_FK_grval} - <span class="summary-1" data-type="summary">
+					{$groupID_FK_total_cnt}
+				</span> Registros totales			</td>			
+				</tr>
+		
+		
+		
+		
+			
+
+		{END ID_FK_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+						
+							<td class="blackshade {$fieldclass_sol_id}">{$label certificados_solicitud_Report sol_id }</td>
+				
+							<td class="blackshade {$fieldclass_nombre}">{$label certificados_solicitud_Report nombre }</td>
+				
+							<td class="blackshade {$fieldclass_primer_apellido}">{$label certificados_solicitud_Report primer_apellido }</td>
+				
+							<td class="blackshade {$fieldclass_segundo_apellido}">{$label certificados_solicitud_Report segundo_apellido }</td>
+				
+							<td class="blackshade {$fieldclass_tipo_documento}">{$label certificados_solicitud_Report tipo_documento }</td>
+				
+							<td class="blackshade {$fieldclass_numero_documento}">{$label certificados_solicitud_Report numero_documento }</td>
+				
+							<td class="blackshade {$fieldclass_telefono}">{$label certificados_solicitud_Report telefono }</td>
+				
+							<td class="blackshade {$fieldclass_departamento}">{$label certificados_solicitud_Report departamento }</td>
+				
+							<td class="blackshade {$fieldclass_municipio}">{$label certificados_solicitud_Report municipio }</td>
+				
+							<td class="blackshade {$fieldclass_direccion}">{$label certificados_solicitud_Report direccion }</td>
+				
+							<td class="blackshade {$fieldclass_cargo}">{$label certificados_solicitud_Report cargo }</td>
+				
+							<td class="blackshade {$fieldclass_email_contacto}">{$label certificados_solicitud_Report email_contacto }</td>
+				
+							<td class="blackshade {$fieldclass_token_id}">{$label certificados_solicitud_Report token_id }</td>
+				
+							<td class="blackshade {$fieldclass_cert_id}">{$label certificados_solicitud_Report cert_id }</td>
+				
+							<td class="blackshade {$fieldclass_vigencia}">{$label certificados_solicitud_Report vigencia }</td>
+				
+							<td class="blackshade {$fieldclass_stage_tk}">{$label certificados_solicitud_Report stage_tk }</td>
+				
+							<td class="blackshade {$fieldclass_tl_fecha_f}">{$label certificados_solicitud_Report tl_fecha_f }</td>
+				
+							<td class="blackshade {$fieldclass_dep}">{$label certificados_solicitud_Report dep }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+    {BEGIN page_summary}
+    <!-- page summary-->
+    <tr class="summaryrow summary-page">
+        <td class="pagesummary" colspan="20">Resumen de la pagina            <span class="page-summary" data-type="summary">{$page_total_cnt}</span> - Registros totales        </td>
+    </tr>
+	
+	
+	
+	    {END page_summary}
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="20">
+            Resumen global {$global_total_cnt} - Registros totales        </td>
+    </tr>
+
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>		</div>
+	{END grid_block}	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

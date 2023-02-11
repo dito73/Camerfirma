@@ -1,0 +1,15 @@
+body.function-login {
+height:100%;
+background:transparent url("../../images/007.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+body.function-remind {
+height:100%;
+background:transparent url("../../images/001.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+body.function-register {
+height:100%;
+background:transparent url("../../images/011.jpg") no-repeat center center fixed;
+background-size:cover;
+}
